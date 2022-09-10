@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conversor.css">
+    <title>Conversor de bases numéricas</title>
+</head>
+
+<body>
+    <div class="header">
+        <h2>Conversão de Bases Numéricas</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="box-form">
+            <select class="select" id="tipos_bases" onchange="habi_desabi(value)">
+                <option value="0">-Selecione-</option>
+                <option value="10">Decimal</option>
+                <option value="2">Binário</option>
+                <option value="8">Octal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+
+
+            <br>
+            <h3>Decimal:</h3>
+            <input id="ipt_decimal" type="text" onkeypress="return type_decimal(event);" disabled />
+
+            <br>
+            <h3>Binário:</h3>
+            <input id="ipt_binario" type="text" onkeypress="return type_decimal(event);" disabled />
+
+            <br>
+            <h3>Octal:</h3>
+            <input id="ipt_octal" type="text" onkeypress="return type_decimal(event);" disabled />
+
+            <br>
+            <h3>Hexadecimal:</h3>
+            <input id="ipt_hexadecimal" type="text" onkeypress="return type_decimal(event);" disabled />
+
+
+
+            <br> <button class="botao" type="button" onclick="calculo();">Converter</button>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="conversor.js"></script>
+
+</html>
